@@ -1,10 +1,6 @@
 <footer class="container-fluid bg-dark">
 
 	<div class="row">
-		<?php dynamic_sidebar('sidebar-footer'); ?>
-	</div>
-
-	<div class="row">
 		<div class="col-12 pb-4 pt-3">
 			<?php
                 wp_nav_menu(array(
@@ -21,11 +17,16 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-12 mb-4 text-center">
-			<p class="text-muted"><small>&copy; <?= date('Y') ?> All rights reserved.</small></p>
-			<p class="text-muted"><small>Creatie door <a href="https://newfish.nl/" title="Newfish B.V.">Newfish B.V.</a></small></p>
+	<div class="row px-5 pb-5">
+
+		<div class="col-6 text-left">
+			<p class="text-muted"><small>Copyright &copy; <?= date('Y') ?> <a href="https://indrukwekkend.nl/" title="Indrukwekkend B.V.">Indrukwekkend B.V.</a></small></p>
 		</div>
+
+		<div class="col-6 text-right">
+			<p class="text-muted"><small>Realisatie: <a href="https://indrukwekkend.nl/" title="Indrukwekkend">Indrukwekkend</a></small></p>
+		</div>
+
 	</div>
 
 </footer>
