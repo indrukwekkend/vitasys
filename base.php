@@ -67,8 +67,8 @@ use Roots\Sage\Wrapper;
         <?php get_template_part('templates/sections/gravityforms'); ?>
       <?php endif;?>
 
-      <?php if( get_row_layout() == 'section_pricinglists' ): ?>
-        <?php get_template_part('templates/sections/pricinglists'); ?>
+      <?php if( get_row_layout() == 'section_pricing' ): ?>
+        <?php get_template_part('templates/sections/pricing'); ?>
       <?php endif;?>
 
       <?php endwhile;?>
