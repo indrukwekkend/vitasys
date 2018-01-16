@@ -13,3 +13,6 @@ Een onepager thema op basis van [Immersolution](http://www.immersolution.com/)
 * [Advanced Custom Fields / ACF](https://www.advancedcustomfields.com/)
 * [Gravity Forms](https://gravityforms.com/)
 * [Yoast SEO](https://yoast.com/)
+
+#### Packages
+* [AOS](https://github.com/michalsnik/aos)
