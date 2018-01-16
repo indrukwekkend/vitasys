@@ -2,6 +2,8 @@
 /**
  * Theme Plugins
  */
+namespace Roots\Sage\Plugins;
+
 function register_required_plugins() {
 
     $plugins = array(
