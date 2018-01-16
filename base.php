@@ -71,6 +71,10 @@ use Roots\Sage\Wrapper;
         <?php get_template_part('templates/sections/pricing'); ?>
       <?php endif;?>
 
+			<?php if( get_row_layout() == 'section_columns' ): ?>
+        <?php get_template_part('templates/sections/columns'); ?>
+      <?php endif;?>
+
       <?php endwhile;?>
     <?php endif;?>
 
