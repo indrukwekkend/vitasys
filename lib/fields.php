@@ -5,8 +5,9 @@
 namespace Roots\Sage\Fields;
 
 $sage_includes = [
-	'lib/fields/pricing.php',     // Prijslijsten
+	'lib/fields/pricing.php',          // Prijslijsten
 	'lib/fields/gravityforms.php',     // Gravity Forms
+	'lib/fields/columns.php',          // Columns
 ];
 foreach ( $sage_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
@@ -65,6 +66,27 @@ add_action('acf/init', function(){
                 'type' => 'clone',
                 'clone' => array(
                   0 => 'group_gravityforms',
+                ),
+                'display' => 'seamless',
+                'layout' => 'block',
+              ),
+            ),
+          ),
+
+          /*====== Columns ======*/
+          'layout_columns' => array(
+            'key' => 'layout_columns',
+            'name' => 'columns',
+            'label' => 'Columns',
+            'display' => 'block',
+            'sub_fields' => array(
+              array(
+                'key' => 'field_columns',
+                'label' => 'Clone Columns',
+                'name' => 'clone_columns',
+                'type' => 'clone',
+                'clone' => array(
+                  0 => 'group_columns',
                 ),
                 'display' => 'seamless',
                 'layout' => 'block',
