@@ -14,6 +14,7 @@ $sage_includes = [
 	'lib/assets.php',          // Scripts and stylesheets
 	'lib/extras.php',          // Custom functions
 	'lib/posts.php',           // Custom post types
+  'lib/fields.php',          // Advanced Custom Fields
 	'lib/plugins.php',         // Theme plugins
 	'lib/setup.php',           // Theme setup
 	'lib/titles.php',          // Page titles

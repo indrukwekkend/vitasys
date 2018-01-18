@@ -28,27 +28,31 @@ add_action('acf/init', function(){
   			'type' => 'flexible_content',
   			'instructions' => '',
   			'layouts' => array(
-  				'layout_pricing' => array(
-  					'key' => 'layout_pricing',
-  					'name' => 'layout_pricing',
-  					'label' => 'Prijslijsten',
-  					'display' => 'block',
-  					'sub_fields' => array(
-  						array(
-  							'key' => 'field_clone_pricing',
-  							'label' => 'Clone Prijslijsten',
-  							'name' => 'clone_pricing',
-  							'type' => 'clone',
-  							'clone' => array(
-  								0 => 'group_pricing',
-  							),
-  							'display' => 'seamless',
-  							'layout' => 'block',
-  						),
-  					),
-  				),
-  			),
-  			'button_label' => 'Add Row',
+
+          /*====== Pricing ======*/
+          'layout_pricing' => array(
+            'key' => 'layout_pricing',
+            'name' => 'pricing',
+            'label' => 'Prijslijsten',
+            'display' => 'block',
+            'sub_fields' => array(
+              array(
+              	'key' => 'field_clone_pricing',
+              	'label' => 'Clone Prijslijsten',
+              	'name' => 'clone_pricing',
+              	'type' => 'clone',
+              	'clone' => array(
+              		0 => 'group_pricing',
+              	),
+              	'display' => 'seamless',
+              	'layout' => 'block',
+              ),
+            ),
+          ),
+
+
+        ),
+  			'button_label' => __('Voeg layout toe'),
   		),
   	),
   	'location' => array(

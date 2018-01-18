@@ -1,5 +1,26 @@
 <?php
-
+/*
+ * Title:           Pricing layout
+ * Description:     Uses tabs to display multiple pricing tables
+ * Docs:            https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior
+ * Version:         v2.0.0
+ *
+ * Field Map:
+ * title (text)
+ * description (textarea)
+ * pricing_items (repeater)
+ *  - title (text)
+ *  - image (image object)
+ *  - list (repeater)
+ *    - number (text)
+ *    - label (text)
+ *    - description (text)
+ *    - price (text)
+ *
+ * Files:
+ * templates/sections/pricing.php
+ * templates/sections/parts/pricing-item.php
+ */
 
 add_action('acf/init', function(){
 
@@ -111,7 +132,7 @@ add_action('acf/init', function(){
   	'style' => 'default',
   	'label_placement' => 'top',
   	'instruction_placement' => 'label',
-  	'active' => 1,
+  	'active' => 0,
   ));
 
 });
