@@ -682,53 +682,15 @@
                 },
                 "5a390059951bb": {
                     "key": "5a390059951bb",
-                    "name": "section_pricing",
-                    "label": "Prijslijsten",
+                    "name": "section_pricinglists",
+                    "label": "Prijslijst",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a534bd3e6007",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5a538425058b8",
-                            "label": "Omschrijving",
-                            "name": "description",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": 6,
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_5a53348eca589",
-                            "label": "Prijslijsten",
+                            "key": "field_5a39007a951bc",
+                            "label": "Prijslijst",
                             "name": "pricinglists",
-                            "type": "repeater",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -737,214 +699,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "field_5a511003404a2",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "row",
-                            "button_label": "Prijslijst toevoegen",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5a511003404a2",
-                                    "label": "Titel",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "Titel van het menu.",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_5a547f071228c",
-                                    "label": "Afbeelding",
-                                    "name": "image",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                },
-                                {
-                                    "key": "field_5a51101d404a3",
-                                    "label": "Items",
-                                    "name": "items",
-                                    "type": "repeater",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "collapsed": "",
-                                    "min": 0,
-                                    "max": 0,
-                                    "layout": "table",
-                                    "button_label": "",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_5a51102e404a4",
-                                            "label": "Prijslijst item",
-                                            "name": "prijslijst_item",
-                                            "type": "clone",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "clone": [
-                                                "group_594288345ccc7"
-                                            ],
-                                            "display": "seamless",
-                                            "layout": "block",
-                                            "prefix_label": 0,
-                                            "prefix_name": 0
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "5a5341e75c28c": {
-                    "key": "5a5341e75c28c",
-                    "name": "section_columns",
-                    "label": "Tekst kolommen",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5a5347968789a",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5a5342065c28d",
-                            "label": "Kolom",
-                            "name": "columns",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "field_5a5342195c28e",
-                            "min": 0,
-                            "max": 0,
+                            "clone": [
+                                "group_594288345ccc7"
+                            ],
+                            "display": "seamless",
                             "layout": "block",
-                            "button_label": "Kolom toevoegen",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5a5342195c28e",
-                                    "label": "Tekst",
-                                    "name": "content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "basic",
-                                    "media_upload": 0,
-                                    "delay": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "5a5344af25fea": {
-                    "key": "5a5344af25fea",
-                    "name": "section_maps",
-                    "label": "Google Maps",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5a5344bf25feb",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5a5344c925fec",
-                            "label": "Locatie",
-                            "name": "location",
-                            "type": "google_map",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "center_lat": "52.2549175",
-                            "center_lng": "5.5301855",
-                            "zoom": "",
-                            "height": ""
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         }
                     ],
                     "min": "",
@@ -973,5 +734,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516107797
+    "modified": 1513689020
 }

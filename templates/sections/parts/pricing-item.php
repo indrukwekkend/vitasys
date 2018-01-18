@@ -6,7 +6,7 @@ use Roots\Sage\Extras;
 
 	<div class="row">
 		<div class="col my-3 text-center">
-			<?= Extras\DOM_image( get_sub_field('image'), 'menukaart', 'img-fluid rounded' ); ?>
+			<?= Extras\get_image_tag( get_sub_field('image') ); ?>
 		</div>
 	</div>
 

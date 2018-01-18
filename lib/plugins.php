@@ -4,32 +4,45 @@
  */
 namespace Roots\Sage\Plugins;
 
-function register_required_plugins() {
+add_action( 'after_setup_theme', function() {
 
     $plugins = array(
-        array(
-            'name'               => 'Advanced Custom Fields Pro',
-            'slug'               => 'advanced-custom-fields-pro',
-            'source'             => '/advanced-custom-fields-pro.zip',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => true,
-        ),
-        array(
-            'name'               => 'Gravity Forms',
-            'slug'               => 'gravityforms',
-            'source'             => '/gravityforms.zip',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => true,
-        ),
-				array(
-            'name'               => 'Yoast SEO',
-            'slug'               => 'wordpress-seo',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => true,
-        ),
+      array(
+        'name'               => 'Advanced Custom Fields Pro',
+        'slug'               => 'advanced-custom-fields-pro',
+        'source'             => '/advanced-custom-fields-pro.zip',
+        'external_url'       => 'https://advancedcustomfields.com/',
+        'required'           => true,
+        'force_activation'   => true,
+        'force_deactivation' => true,
+      ),
+      array(
+      'name'               => 'Advanced Custom Fields: Post2Post Addon',
+      'slug'               => 'post-2-post-for-acf',
+      'required'           => true,
+      'force_activation'   => true,
+      'force_deactivation' => true,
+      ),
+      array(
+        'name'               => 'Gravity Forms',
+        'slug'               => 'gravityforms',
+        'source'             => '/gravityforms.zip',
+        'external_url'       => 'https://gravityforms.com/',
+        'required'           => true,
+        'force_activation'   => true,
+        'force_deactivation' => true,
+      ),
+      array(
+        'name'               => 'Yoast SEO',
+        'slug'               => 'wordpress-seo',
+        'required'           => false,
+        'force_activation'   => false,
+        'force_deactivation' => false,
+      ),
+      array(
+        'name'               => 'Post Types Order',
+        'slug'               => 'post-types-order',
+      ),
     );
 
     $config = array(
@@ -44,5 +57,4 @@ function register_required_plugins() {
     );
 
     tgmpa( $plugins, $config );
-}
-add_action( 'after_setup_theme', __NAMESPACE__ . '\\register_required_plugins' );
+});
