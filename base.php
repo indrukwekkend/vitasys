@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
 
     </main>
 
-		<?php get_template_part('sections'); ?>
+		<?php get_template_part('templates/sections'); ?>
 
     <?php do_action('get_footer'); ?>
 
