@@ -3,7 +3,7 @@
 <div class="col">
 
   <div class="row">
-    <?php the_sub_field('title'); ?>
+    <h1 class="display-4"><?php the_sub_field('title'); ?></h1>
   </div>
 
   <div class="row">
