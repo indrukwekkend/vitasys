@@ -1,7 +1,7 @@
-<?php
-$form_id = get_sub_field('form_id');
-?>
-<?php if($form_id > 0): ?>
+
+<?php $gravityform_id = get_sub_field('gravityform_id'); ?>
+
+<?php if($gravityform_id > 0): ?>
 
 	<section class="gravityform">
 
@@ -9,7 +9,7 @@ $form_id = get_sub_field('form_id');
 
 			<div class="col-8">
 
-				<?= do_shortcode('[gravityform id="'.$form_id.'" title="false" description="false"]'); ?>
+				<?= do_shortcode('[gravityform id="'.$gravityform_id.'" title="false" description="false"]'); ?>
 
 			</div>
 
