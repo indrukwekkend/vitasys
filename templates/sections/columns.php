@@ -16,7 +16,7 @@
 
 				<?php  while( have_rows('items') ) : the_row(); ?>
 
-					<?php get_template_part('templates/sections/parts/column','item'); ?>
+					<?php get_template_part('templates/sections/parts/columns','item'); ?>
 
 				<?php endwhile; ?>
 
