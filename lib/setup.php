@@ -124,3 +124,8 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
+
+/*
+ * Remove acf-post2post nag
+ */
+add_filter('remove_hube2_nag', '__return_true');
