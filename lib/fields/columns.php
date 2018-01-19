@@ -3,7 +3,7 @@
 * Title:           Columns layout
 * Description:     Displays up to 4 columns of content
 * Docs:            https://getbootstrap.com/docs/4.0/layout/grid/
-* Version:         v2.0.0
+* Version:         v2.1.0
 *
 * Field Map:
 * title (text)
@@ -24,39 +24,36 @@ add_action('acf/init', function(){
     'fields' => array(
       array(
         'key' => 'field_columns_title',
-        'label' => 'Titel',
+        'label' => __('Titel'),
         'name' => 'title',
         'type' => 'text',
         'instructions' => '',
       ),
       array(
+        'key' => 'field_columns_lead',
+        'label' => __('Ondertitel'),
+        'name' => 'lead',
+        'type' => 'text',
+        'instructions' => '',
+      ),
+      array(
         'key' => 'field_columns_items',
-        'label' => 'Kolom',
+        'label' => __('Kolom'),
         'name' => 'items',
         'type' => 'repeater',
-        'instructions' => '',
-        'collapsed' => 'field_column_item_title',
-        'min' => 0,
-        'max' => 0,
-        'layout' => 'block',
-        'button_label' => 'Kolom toevoegen',
+        'instructions' => 'Maak hier kolomen aan. Word getoond van links naar rechts (1-4)',
+        'min' => 1,
+        'max' => 4,
+        'layout' => 'table',
+        'button_label' => __('Kolom toevoegen'),
         'sub_fields' => array(
           array(
-            'key' => 'field_column_item_title',
-            'label' => 'Titel',
-            'name' => 'title',
-            'type' => 'text',
-            'instructions' => '',
-          ),
-          array(
             'key' => 'field_column_item_content',
-            'label' => 'Tekst',
+            'label' => __('Tekst'),
             'name' => 'content',
             'type' => 'wysiwyg',
-            'instructions' => '',
             'tabs' => 'all',
             'toolbar' => 'basic',
-            'media_upload' => 0,
             'delay' => 1,
           ),
         ),
