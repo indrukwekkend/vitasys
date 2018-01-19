@@ -8,7 +8,7 @@
   </div>
 </section>
 
-<footer class="container-fluid bg-dark">
+<footer class="container-fluid bg-footer">
 
 	<div class="row px-5 py-4">
 

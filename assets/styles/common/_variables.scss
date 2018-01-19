@@ -83,8 +83,10 @@ $theme-colors: (
   warning: $yellow,
   danger: $red,
   light: $gray-100,
-  dark: $gray-800
+  dark: $gray-800,
 );
+
+$bg-footer: #003766;
 
 $line-height-base:  1.6;
 $font-size-base:    1.05rem;

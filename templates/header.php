@@ -1,9 +1,10 @@
+<?php use Roots\Sage\Assets; ?>
 <header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
 
 			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-				<?php bloginfo('name'); ?>
+				<img class="brand" height="50" src="<?php echo Assets\asset_path('images/logo.png'); ?>" alt="<?php bloginfo('name'); ?>" />
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false" aria-label="<?php _e('Wissel navigatie', 'sage');?>">
