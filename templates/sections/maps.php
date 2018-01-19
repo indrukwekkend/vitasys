@@ -9,8 +9,7 @@
       <div class="row">
         <div class="col-12 p-0">
           <div class="acf-map">
-            <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
-            </div>
+            <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"><?= ( get_sub_field('description') )? "<p>".the_sub_field('description')."</p>":''; ?></div>
           </div>
         </div>
       </div>

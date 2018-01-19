@@ -2,7 +2,7 @@
 /*
  * Title:           Google Maps layout
  * Description:     Displays a marker in Google Maps
- * Version:         v1.0.0
+ * Version:         v1.0.1
  *
  * Field Map:
  * title (text)
@@ -32,10 +32,17 @@ add_action('acf/init', function(){
   			'name' => 'lead',
   			'type' => 'text',
         'instructions' => __('Voer een ondertitel in'),
+  		),
+      array(
+        'key' => 'field_maps_description',
+        'label' => __('Marker omschrijving'),
+        'name' => 'description',
+        'type' => 'text',
+        'instructions' => __('Voer hier de tekst in voor wanneer er op de marker word geklikt'),
         'wrapper' => array(
           'width' => '70',
         ),
-  		),
+      ),
       array(
   			'key' => 'field_maps_height',
   			'label' => __('Hoogte van de kaart'),
