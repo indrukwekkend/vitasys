@@ -1,7 +1,7 @@
 <?php // Version: v1.0.0 ?>
 
 
-<div class="card">
+<div class="card card-shadow">
 
   <div class="card-body">
 
