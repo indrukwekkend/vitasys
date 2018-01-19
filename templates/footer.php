@@ -1,3 +1,13 @@
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?= do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="container-fluid bg-dark">
 
 	<div class="row px-5 py-4">
