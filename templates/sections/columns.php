@@ -1,8 +1,6 @@
-<?php // Version: v2.0.1 ?>
-
 <section id="<?= strtolower( str_replace( ' ','-', get_sub_field('title') ) ); ?>" class="columns">
 
-	<div class="container pb-5">
+	<div class="container py-4">
 
     <?php if( get_field('title') ): ?>
       <div class="row py-5 text-center">

@@ -1,8 +1,6 @@
-<?php // Version: v2.0.0 ?>
-
 <section id="<?= strtolower( get_sub_field('title') ); ?>" class="pricing">
 
-  <div class="container py-5">
+  <div class="container py-3">
 
     <div class="row">
       <div class="col-12">

@@ -1,10 +1,8 @@
-<?php // Version: v1.0.1 ?>
-
 <section id="<?= strtolower( str_replace( ' ','-', get_sub_field('title') ) ); ?>" class="cards bg-light">
 
-	<div class="container pb-5">
+	<div class="container py-4">
 
-    <div class="row py-5 text-center">
+    <div class="row pb-3 text-center">
 
       <div class="col-12">
 
@@ -22,7 +20,7 @@
 
 		<?php if( have_rows('items') ): ?>
 
-			<div class="row card-deck justify-content-middle">
+			<div class="row card-deck mb-4 justify-content-middle">
 
 				<?php  while( have_rows('items') ) : the_row(); ?>
 
