@@ -1,22 +1,7 @@
-<?php // Version: v2.0.0 ?>
-
-<?php $image = get_sub_field('image'); ?>
-<?php $background = 'style="background-image:url('.$image.');"'; ?>
-
-<section class="visual" <?= $background; ?>>
-
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-12">
-
-        <!-- Hier kan eventueel nog content komen -->
-
-      </div>
-
+<section class="visual container">
+  <div class="row pb-5">
+    <div class="col-12 text-center">
+      <img class="img-fluid" src="<?php the_sub_field('image'); ?>"/>
     </div>
-
   </div>
-
 </section>
