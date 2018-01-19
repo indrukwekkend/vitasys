@@ -16,3 +16,4 @@ Een onepager thema op basis van [Immersolution](http://www.immersolution.com/)
 
 #### Packages
 * [AOS](https://github.com/michalsnik/aos)
+* [SmoothScroll](https://github.com/cferdinandi/smooth-scroll)
