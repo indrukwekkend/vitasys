@@ -3,7 +3,7 @@
 * Title:           Cards layout
 * Description:     Displays up to 4 columns of content in the form of cards
 * Docs:            http://getbootstrap.com/docs/4.0/components/card/
-* Version:         v1.0.0
+* Version:         v1.1.0
 *
 * Field Map:
 * title (text)
@@ -24,21 +24,21 @@ add_action('acf/init', function(){
     'fields' => array(
       array(
         'key' => 'field_cards_title',
-        'label' => 'Titel',
+        'label' => __('Titel'),
         'name' => 'title',
         'type' => 'text',
         'instructions' => '',
       ),
       array(
         'key' => 'field_cards_subtitle',
-        'label' => 'Ondertitel',
-        'name' => 'subtitle',
+        'label' => __('Ondertitel'),
+        'name' => 'lead',
         'type' => 'text',
         'instructions' => '',
       ),
       array(
         'key' => 'field_cards_items',
-        'label' => 'Kolom',
+        'label' => __('Kolom'),
         'name' => 'items',
         'type' => 'repeater',
         'instructions' => '',
@@ -46,25 +46,25 @@ add_action('acf/init', function(){
         'min' => 0,
         'max' => 0,
         'layout' => 'block',
-        'button_label' => 'Kolom toevoegen',
+        'button_label' => __('Kolom toevoegen'),
         'sub_fields' => array(
           array(
             'key' => 'field_column_item_title',
-            'label' => 'Titel',
+            'label' => __('Titel'),
             'name' => 'title',
             'type' => 'text',
             'instructions' => '',
           ),
           array(
             'key' => 'field_cards_subtitle',
-            'label' => 'Ondertitel',
-            'name' => 'subtitle',
+            'label' => __('Ondertitel'),
+            'name' => 'lead',
             'type' => 'text',
             'instructions' => '',
           ),
           array(
             'key' => 'field_column_item_content',
-            'label' => 'Tekst',
+            'label' => __('Tekst'),
             'name' => 'content',
             'type' => 'wysiwyg',
             'instructions' => '',
