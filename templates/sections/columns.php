@@ -4,17 +4,19 @@
 
 	<div class="container pb-5">
 
-		<div class="row py-5 text-center">
+    <?php if( get_field('title') ): ?>
+      <div class="row py-5 text-center">
 
-      <div class="col-12">
+        <div class="col-12">
 
-      	<h1 class="mb-3 display-4">
-          <?php the_sub_field('title'); ?>
-        </h1>
+          <h1 class="mb-3 display-4">
+            <?php the_sub_field('title'); ?>
+          </h1>
+
+        </div>
 
       </div>
-
-  	</div>
+    <?php endif; ?>
 
 		<?php if( have_rows('items') ): ?>
 
