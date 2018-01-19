@@ -11,6 +11,7 @@ $sage_includes = [
 	'lib/fields/display.php',          // Display
 	'lib/fields/visual.php',           // Visual
 	'lib/fields/cards.php',            // Visual
+	'lib/fields/maps.php',            // Google Maps
 ];
 foreach ( $sage_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
@@ -139,7 +140,7 @@ add_action('acf/init', function(){
             ),
           ),
 
-          /*====== Visual ======*/
+          /*====== Cards ======*/
           'layout_cards' => array(
             'key' => 'layout_cards',
             'name' => 'cards',
@@ -153,6 +154,27 @@ add_action('acf/init', function(){
                 'type' => 'clone',
                 'clone' => array(
                   0 => 'group_cards',
+                ),
+                'display' => 'seamless',
+                'layout' => 'block',
+              ),
+            ),
+          ),
+
+          /*====== Google Maps ======*/
+          'layout_maps' => array(
+            'key' => 'layout_maps',
+            'name' => 'maps',
+            'label' => __('Google Maps'),
+            'display' => 'block',
+            'sub_fields' => array(
+              array(
+                'key' => 'field_maps',
+                'label' => 'Clone Google Maps',
+                'name' => 'clone_maps',
+                'type' => 'clone',
+                'clone' => array(
+                  0 => 'group_google_maps',
                 ),
                 'display' => 'seamless',
                 'layout' => 'block',
