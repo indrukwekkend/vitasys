@@ -8,9 +8,9 @@
       </h5>
     <?php endif; ?>
 
-    <?php if( get_sub_field('subtitle') ): ?>
+    <?php if( get_sub_field('lead') ): ?>
       <h6 class="card-subtitle text-muted">
-        <?php the_sub_field('subtitle'); ?>
+        <?php the_sub_field('lead'); ?>
       </h6>
     <?php endif; ?>
 
