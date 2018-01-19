@@ -10,6 +10,7 @@ $sage_includes = [
 	'lib/fields/columns.php',          // Columns
 	'lib/fields/display.php',          // Display
 	'lib/fields/visual.php',           // Visual
+	'lib/fields/cards.php',            // Visual
 ];
 foreach ( $sage_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
@@ -131,6 +132,27 @@ add_action('acf/init', function(){
                 'type' => 'clone',
                 'clone' => array(
                   0 => 'group_visual',
+                ),
+                'display' => 'seamless',
+                'layout' => 'block',
+              ),
+            ),
+          ),
+
+          /*====== Visual ======*/
+          'layout_cards' => array(
+            'key' => 'layout_cards',
+            'name' => 'cards',
+            'label' => 'Cards',
+            'display' => 'block',
+            'sub_fields' => array(
+              array(
+                'key' => 'field_cards',
+                'label' => 'Clone Cards',
+                'name' => 'clone_cards',
+                'type' => 'clone',
+                'clone' => array(
+                  0 => 'group_cards',
                 ),
                 'display' => 'seamless',
                 'layout' => 'block',
