@@ -1,10 +1,11 @@
+
 <section class="display">
 
 	<div class="row py-3 text-center">
 
 		<div class="col-12">
 
-			<h1 class="<?php the_sub_field('display_type'); ?>">
+			<h1 class="<?php the_sub_field('type'); ?>">
 				<?php the_sub_field('title'); ?>
 			</h1>
 

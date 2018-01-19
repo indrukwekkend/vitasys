@@ -8,6 +8,7 @@ $sage_includes = [
 	'lib/fields/pricing.php',          // Prijslijsten
 	'lib/fields/gravityforms.php',     // Gravity Forms
 	'lib/fields/columns.php',          // Columns
+	'lib/fields/display.php',          // Display
 ];
 foreach ( $sage_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
@@ -87,6 +88,27 @@ add_action('acf/init', function(){
                 'type' => 'clone',
                 'clone' => array(
                   0 => 'group_columns',
+                ),
+                'display' => 'seamless',
+                'layout' => 'block',
+              ),
+            ),
+          ),
+
+          /*====== Display ======*/
+          'layout_display' => array(
+            'key' => 'layout_display',
+            'name' => 'display',
+            'label' => 'Titel tekst',
+            'display' => 'block',
+            'sub_fields' => array(
+              array(
+                'key' => 'field_display',
+                'label' => 'Clone Display',
+                'name' => 'clone_display',
+                'type' => 'clone',
+                'clone' => array(
+                  0 => 'group_display',
                 ),
                 'display' => 'seamless',
                 'layout' => 'block',
