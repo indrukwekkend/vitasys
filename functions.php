@@ -15,6 +15,7 @@ $sage_includes = [
 	'lib/extras.php',          // Custom functions
 	'lib/posts.php',           // Custom post types
   'lib/fields.php',          // Advanced Custom Fields
+  'lib/pages.php',          // Advanced Custom Fields: Option Pages
 	'lib/plugins.php',         // Theme plugins
 	'lib/setup.php',           // Theme setup
 	'lib/titles.php',          // Page titles
