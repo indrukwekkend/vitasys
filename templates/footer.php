@@ -13,7 +13,7 @@
 	<div class="row px-5 py-4">
 
 		<div class="col-6 text-left">
-			<p class="text-muted"><small>Copyright &copy; <?= date('Y') ?> <a href="https://vitasys.nl/" title="VITASYS Automatisering">VITASYS Automatisering</a></small></p>
+			<p class="text-muted"><small>Copyright &copy; <?= date('Y') ?> <a href="<?= esc_url(home_url('/')); ?>" title="<?= bloginfo('name'); ?>"><?= bloginfo('name'); ?></a></small></p>
 		</div>
 
 		<div class="col-6 text-right">
